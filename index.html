@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mi Portfolio</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>{A S}</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
+                            <li><a href="#sobremi">SOBRE MI</a></li>
+                            <li><a href="#skills">CONOCIMIENTOS</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#contacto">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive tres lineas -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Agustina Sosa</span>, Desarrollador Web</h2>
+                <p class="descripcion">Este es mi portfolio donde vas a poder conocer un poco sobre mi, las tecnologias que se, y tambien encontraras un formulario por donde me podes contactar.. </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/perfilbasico.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Agustina Sosa</span> </h2>
+            <h3>Desarrollador Web</h3>
+            <p>Soy de Bs.As Argentina y resido en Banfield.</p>
+            <p>tengo 23 años. <br>Soy autodidacta, me capacite en lugares como Edutin Academy, UTN (Universidad Nacional de Tecnologia), Google Activate, ICLA (Instituto de Capacitacion Laboral Argentino). <br> Las tecnologias que domino son HTML, CSS, PHP y MySQL. Tambien tengo conocimientos en JavaScript, Larabel, etc.</p>
+            <p>Manejo Exel, PowerPoint, Word, básico</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+   
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <P>HTML</P>
+        </div>
+
+        <div class="skill">
+            <P>CSS</P>
+        </div>
+
+        <div class="skill">
+            <P>MySQL</P>
+        </div>
+
+        <div class="skill">
+            LARAVEL
+        </div>
+
+        <div class="skill">
+            PHP
+        </div>
+
+        <div class="skill">
+            JAVASCRIPT
+        </div>
+
+        
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/agustinaayelensosa2@gmail.com" method="post">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad" name="name">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad" name="correo">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto..." class="input-full" name="asunto">
+                </div>
+                <div class="fila">
+                    <textarea name="msg" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Email: agustinaayelensosa2@gmail.com</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
